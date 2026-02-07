@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSG THEME INSTALLER</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/SSGxFILES/me/refs/heads/main/ssg.ico">
+    <link rel="stylesheet" href="/nav/assets/css/style.css">
+    <link rel="stylesheet" href="/nav/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/nav/assets/css/materialdesignicons.min.css">
+    <script type="text/javascript" src="/nav/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io.js"></script>
+    <script type="text/javascript" src="/socket.io-stream.js"></script>
+    <script type="text/javascript" src="/nav/assets/js/toast.js"></script>
+    <style>
+        #footna,#headna{background:var(--MyBG2);position:fixed;transform:translate(-50%);color:var(--MyColor);box-shadow:0 0 10px #000;left:50%}#loginStats,.card{box-shadow:var(--MyShadow)}.circle,.progress-container{position:relative;width:200px;height:200px}.btn,textarea.form-control{min-height:38px;align-content:center}@font-face{font-family:SSG;src:url('https://raw.githubusercontent.com/SSGxFILES/SSGx005/refs/heads/main/SSG.woff') format('woff');font-weight:400;font-style:normal}:root{--MyColor:var(--info);--MyColor2:#ffffff;--MyColor3:#414141;--MyColor4:#00ffff;--MyColor5:#6c7293;--BG:radial-gradient(1200px 800px at 20% 15%, rgb(0 12 177 / 22%), transparent 55%),radial-gradient(900px 700px at 80% 25%, rgb(0 182 211 / 18%), transparent 60%),radial-gradient(1200px 900px at 55% 90%, rgb(63 244 119 / 14%), transparent 60%),linear-gradient(135deg, #0b1020, #05070f 60%, #050509);--MyBG:#0c0e11;--MyBG2:#0a0b0e;--MyBG3:#28282B;--MyShadow:none;--MyShadowInset:none}body,html{height: 100vh;background-color:#101216!important}.grid-margin{margin-bottom:15px!important}#headna{top:0;align-items:center;text-align:center;padding:0 20px;z-index:2}#SSG{font-family:SSG,ARIAL;font-size:22px}#footna{bottom:0;font-size:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:5px!important;z-index:1}.card{border-radius:10px!important;border-color:transparent;background:#191c24;box-shadow:0 0 10px #000}input:-webkit-autofill{background-color:var(--MyBG)!important;color:var(--MyColor2);transition:background-color 5000s ease-in-out}input:-moz-autofill{background-color:var(--MyBG)!important;color:var(--MyColor2);transition:background-color 5000s ease-in-out}input:-webkit-autofill::first-line{color:var(--MyColor2)}input::placeholder{font-size:12px!important;color:#0e6268!important}#loginStats{display:flex;justify-content:center;gap:10px;width:fit-content;padding:2px 10px;border-radius:30px;margin:10px auto;background:#080b12}#PPPoE-theme-ID-lbl,#ProgressTitle,#UploadLbl,#c-theme-status,.c-title,.myTitle,.text-success{color:var(--MyColor)!important}.form-check-primary.form-check label input[type=checkbox]:checked+.input-helper:before,.form-check-primary.form-check label input[type=radio]:checked+.input-helper:before{background-color:var(--MyColor)!important}.form-check-primary.form-check label input[type=checkbox]+.input-helper:before,.form-check-primary.form-check label input[type=radio]+.input-helper:before{border-color:var(--MyColor)!important;border-radius:100%;width:16px!important;height:16px!important}.form-check .form-check-label input[type=checkbox]:checked+.input-helper:after{background:var(--MyColor4);content:'';border-radius:100%;width:10px;height:10px;top:5px;left:3px;font-size:0px}.form-check .form-check-label input[type=radio]+.input-helper:after{background:var(--MyColor4)!important;width:10px!important;height:10px!important;top:3px!important;left:3px!important}.form-check{margin-right:auto!important}.form-check .form-check-label,small{color:#fff}.modal.fade .modal-dialog{transition:transform .2s!important;transform:translate(0,0);transform:scale(0)}.modal.fade.show .modal-dialog{transform:scale(1)}.modal-backdrop.show{opacity:0!important}.modal.fade.show{background:rgba(0,0,0,.1);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}.modal-body .card-body{max-height:300px;overflow:auto}@keyframes rotateAnimation{from{transform:rotate(0)}to{transform:rotate(360deg)}}.circle{border:5px solid #0f1115;border-radius:50%;box-shadow:var(--MyShadow)!important;background:linear-gradient(45deg,var(--MyColor),#000,#000,var(--MyColor));animation:2s linear infinite rotateAnimation}.percentage{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-weight:700;background:var(--MyBG);color:var(--MyColor);font-family:SSG,RUBIK;font-size:20px;width:170px;height:170px;display:flex;justify-content:center;align-items:center;border-radius:100%;border:none;box-shadow:0 0 20px #000!important}.my-btnA,.my-btnA:focus,.my-btnB,.my-btnB:focus,.my-btnC,.my-btnC:focus{box-shadow:0 4px 15px rgb(0 0 0 / 20%)}.myspace-between{width:100%;display:flex;justify-content:space-between;gap:2px}#PromoPlanCount,input[type=color]{padding:1px 2px;border:none;min-width:25px;width:16.666%;height:auto;color:#ffff}.myInput{padding:4px;font-size:14px;line-height:2;height:38px}.w-50{width:50%!important}#LogoBannerFilePreview,#MainBgFilePreview,#ModalBgFilePreview,#PortalBgFilePreview,.img-btn{width:auto;max-width:100%;height:100%}.img-btn{padding:0;max-height:38px}.ParentQR{width:118px;min-width:118px;display:flex;justify-content:center;flex-direction:column;font-size:118px}.blink{animation:.5s infinite blinker}@keyframes blinker{50%{opacity:0}}.modal-content{background:rgba(0,0,0,.7);border-color:#000}.hideme,.upload-dialog{display:none!important}.reboot{background-color:rgba(0,0,0,.7);position:fixed;z-index:100;top:0;left:0;bottom:0;right:0;display:flex;flex-direction:column;justify-content:center;align-items:center}.loader,.loader span{display:inline-block}.loader{font-size:0px;padding:0}.loader span{vertical-align:middle;border-radius:100%;width:12px;height:12px;margin:5px 3px;-webkit-animation:.8s linear infinite alternate loader1;animation:.8s linear infinite alternate loader1}.loader span:first-child,.loader span:nth-child(5){-webkit-animation-delay:-1s;animation-delay:-1s;background:var(--MyColor)}.loader span:nth-child(2),.loader span:nth-child(4){-webkit-animation-delay:-.8s;animation-delay:-.8s;background:var(--MyColor)}.loader span:nth-child(3){-webkit-animation-delay:-.26666s;animation-delay:-.26666s;background:var(--MyColor)}@keyframes loader1{from{transform:scale(0,0)}to{transform:scale(1,1)}}@-webkit-keyframes loader1{from{-webkit-transform:scale(0,0)}to{-webkit-transform:scale(1,1)}}textarea.form-control{text-align:center;height:38px;max-height:300px;width:100%;box-sizing:border-box;padding:4px;resize:none;overflow:hidden;transition:height .2s}.btn{align-items:center}.my-btnA,.my-btnA:focus{height:100%;border-radius:8px;color:#000;background:#00d595;border:1px solid #2b2d2f}.my-btnA:hover{color:#fff;border:1px solid #196f55}.my-btnB,.my-btnB:focus{height:100%;border-radius:8px;color:#000;background:#dd9b00;border:1px solid #2b2d2f}.my-btnB:hover{color:#fff;border:1px solid #63581f}.my-btnC,.my-btnC:focus{height:100%;border-radius:8px;color:#000;background:#ff3e3e;border:1px solid #2b2d2f}.my-btnC:hover{color:var(--MyColor) #fff;border:1px solid #6b2424}.my-btn1,.my-btn1:focus{flex:1 0 170px;line-height:1.2;height:50px;border-radius:8px;color:#fff;background:#262b37;border:1px solid #2b2d2f;box-shadow:0 4px 15px rgb(0 0 0 / 20%)}.my-btn2,.my-btn2:focus,.my-btn3{padding:10px;height:auto;box-shadow:0 4px 15px rgb(0 0 0 / 20%);width:100%}.my-btn1:hover{color:#fff;border:1px solid #2a4863}.my-btn2,.my-btn2:focus{border-radius:8px;background:#262b37;border:1px solid #2b2d2f}.my-btn2:hover{color:#fff;border:1px solid #226569}.my-btn3{border-radius:5px;background:lch(17.43 8.54 271.86 / .5);border:1px solid #2b2d2f;cursor:default!important}.my-btn3:hover{color:#fff;border:1px solid #692260}#ModalBg-Container:hover::before,#PortalBg-Container:hover::before{background:#692260}.columnGap{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;width:100%}#PromoPlanBtn option{background-color:#191c24}#AmountVal-Label,#BPIFileDisplay,#ExpDate-Label,#GcashFileDisplay,#IP-Label,#LogoBannerFileDisplay,#MAC-Label,#MainBgFileDisplay,#MayaFileDisplay,#ModalBgFileDisplay,#OtherBankFileDisplay,#OtherBankLogoDisplay,#PortalBgFileDisplay,#QRPHFileDisplay,#SpayFileDisplay,#Speed-Label{padding:0;align-content:center}.opacityLabel{font-size:10px}
+    </style>
+    <style id="ToRemove">
+        .modal:not(#ThemeProgress):not(#CustomThemeActivation):not(#imageModal), .modal-backdrop, .toast-container{display: none!important;}
+    </style>
+</head>
+<body>
+    <div class="container" style="padding:0">
+        <div class="justify-content-center" style="min-height:100vh;padding:43px 0;display:flex;flex-direction:column">
+            <div class="row col-md-12" style="display:flex;justify-content:center;margin:0!important">
+                <div id="headna" class="w-100"><span id="SSG">SERGIO THEME INSTALLER</span></div>
+                <div id="Theme-Confirm" class="col-md-6 stretch-card" style="padding:10px">
+                    <div class="card text-center">
+                        <div id="loginStats" style="display:none"><span>⦿</span>
+                            <h5 id="loginText" style="line-height:1.6;margin:0"></h5><span>⦿</span></div>
+                        <div class="card-body" style="padding:10px;align-content:center">
+                            <div class="myspace-between" style="flex-direction:column">
+                                <div>
+                                    <h6 id="PPPoE-theme-ID-lbl" style="font-weight:700;margin:0">PPPoE Theme ID:</h6><small id="noteError" class="text-center text-danger"></small>
+                                    <input id="PPPoE-Theme-ID" class="form-control text-center myInput">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Theme-Config" style="padding:10px;display:none">
+                            <div id="Theme-Config-container" class="myspace-between" style="flex-direction:column;gap:10px">
+                                <div id="onlinepaymentDiv" class="btn my-btn2 text-left">
+                                    <div id="OnlinePaymentContainer" class="form-check form-check-primary" style="margin:0">
+                                        <label class="form-check-label text-left" for="OnlinePayment">
+                                            <input class="form-check-input" type="checkbox" id="OnlinePayment"> WiFi5 OnlinePayment<i class="input-helper"></i></label>
+                                    </div>
+                                </div>
+                                <div class="myspace-between" style="flex-wrap:wrap;gap:10px"><a id="LogoBannSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#LogoBann-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Logo or Banner</a>
+                                    <div id="LogoBann-Container"
+                                    class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="LogoBann-Container" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-center w-100">BANNER AND ANNOUNCEMENT</h5></div>
+                                                <div class="modal-body" style="padding:15px">
+                                                    <div id="logobannerDiv" class="columnGap btn my-btn3">
+                                                        <div id="LogoBannerContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="LogoBanner">
+                                                                <input class="form-check-input" type="checkbox" id="LogoBanner"> Add Logo or Banner<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="LogoBanner-Container" class="columnGap" style="display:none"><img id="LogoBannerFilePreview" style="display:none">
+                                                            <div class="myspace-between">
+                                                                <input type="file" id="LogoBannerFile" accept=".jpg, .jpeg, .png, .gif" style="display:none">
+                                                                <button id="LogoBannerFileDisplay" class="form-control w-50"><i class="fa fa-upload" aria-hidden="true"></i>Upload Logo or Banner</button>
+                                                                <div class="myspace-between w-50" style="margin:0"><span class="w-50" style="font-size:12px;border-radius:2px;background:#20252b;align-content:center">Logo Height(px):</span>
+                                                                    <input id="LogoBannerHeight" class="form-control text-center w-50"
+                                                                    type="number" min="100" max="350" autocomplete="off">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><a id="BrandTitleSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#BrandTitleConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Brand Name</a>
+                                    <div id="BrandTitleConfig-Container"
+                                    class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="BrandTitleConfig-Container" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-center w-100">SET BRAND NAME</h5></div>
+                                                <div class="modal-body columnGap" style="padding:15px">
+                                                    <div id="brandtitleDiv" class="columnGap btn my-btn3">
+                                                        <div class="d-flex justify-content-between w-100">
+                                                            <div id="BrandTitleContainer" class="form-check form-check-primary" style="margin:0">
+                                                                <label class="form-check-label text-left" for="BrandTitle">
+                                                                    <input class="form-check-input" type="checkbox" id="BrandTitle"> Brand Name Text<i class="input-helper"></i></label>
+                                                            </div>
+                                                            <div id="BrandTitleTextFXContainer" class="form-check form-check-primary" style="margin:0;display:none">
+                                                                <label class="form-check-label text-left" for="BrandTitleTextFX">
+                                                                    <input class="form-check-input" type="checkbox" id="BrandTitleTextFX"> Enable Text Animation<i class="input-helper"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="BrandTitle-Container" class="columnGap" style="display:none">
+                                                            <textarea id="BrandTitleText" class="form-control text-center" autocomplete="off"></textarea>
+                                                            <div class="myspace-between fx"><span style="width:fit-content;padding:10px 5px" class="form-control">FX:</span>
+                                                                <input type="color" id="fx1-BrandTitle" class="form-control">
+                                                                <input type="color" id="fx2-BrandTitle" class="form-control">
+                                                                <input type="color" id="fx3-BrandTitle" class="form-control">
+                                                                <input type="color" id="fx4-BrandTitle" class="form-control">
+                                                                <input type="color" id="fx5-BrandTitle" class="form-control">
+                                                                <input type="color" id="fx6-BrandTitle" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="subbrandtitleDiv" class="columnGap btn my-btn3" style="display:none">
+                                                        <div id="SubBrandTitleContainerParent" class="w-100">
+                                                            <div class="d-flex justify-content-between">
+                                                                <div id="SubBrandTitleContainer" class="form-check form-check-primary" style="margin:0">
+                                                                    <label class="form-check-label text-left" for="SubBrandTitle">
+                                                                        <input class="form-check-input" type="checkbox" id="SubBrandTitle"> SubBrand Name Text<i class="input-helper"></i></label>
+                                                                </div>
+                                                                <div id="SubBrandTitleTextFXContainer" class="form-check form-check-primary" style="margin:0;display:none">
+                                                                    <label class="form-check-label text-left" for="SubBrandTitleTextFX">
+                                                                        <input class="form-check-input" type="checkbox" id="SubBrandTitleTextFX"> Enable Text Animation<i class="input-helper"></i></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="SubBrandTitle-Container" class="columnGap" style="display:none">
+                                                            <textarea id="SubBrandTitleText" class="form-control text-center" autocomplete="off"></textarea>
+                                                            <div class="myspace-between fx"><span style="width:fit-content;padding:10px 5px" class="form-control">FX:</span>
+                                                                <input type="color" id="fx1-SubBrandTitle" class="form-control">
+                                                                <input type="color" id="fx2-SubBrandTitle" class="form-control">
+                                                                <input type="color" id="fx3-SubBrandTitle" class="form-control">
+                                                                <input type="color" id="fx4-SubBrandTitle" class="form-control">
+                                                                <input type="color" id="fx5-SubBrandTitle" class="form-control">
+                                                                <input type="color" id="fx6-SubBrandTitle" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="BrandTitleBackGround-Container" class="myspace-between btn my-btn3" style="flex-direction:column"><span id="BrandTitleBackGround-Label" class="form-control">Brand Name Background and Border Color</span>
+                                                        <div class="myspace-between">
+                                                            <div id="BrandTitleBackGround-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BrandTitleBackGroundOpacity-label" class="opacityLabel">Background Color</span>
+                                                                <input type="range" id="BrandTitleBackGroundOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                            </div>
+                                                            <input type="color" id="BrandTitleBackGround-Picker" class="form-control">
+                                                        </div>
+                                                        <div class="myspace-between">
+                                                            <div id="BrandTitleBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BrandTitleBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                                <input type="range" id="BrandTitleBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                            </div>
+                                                            <input type="color" id="BrandTitleBrdr-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><a id="BackgroundAnimationSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#BackgroundAnimationConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Background / Animation</a>
+                                    <div
+                                    id="BackgroundAnimationConfig-Container" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="BackgroundAnimationConfig-Container" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-center w-100">BACKGROUND AND ANIMATION</h5></div>
+                                                <div class="modal-body columnGap" style="padding:15px">
+                                                    <div id="MainBg-Container" class="columnGap btn my-btn3">
+                                                        <div id="MainBg-Parent" class="w-100" style="display:flex;justify-content:space-between">
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="MainBg-Image" style="padding:0;line-height:1.2">
+                                                                    <input id="MainBg-Image" value="MainBg-Image" class="form-check-input" type="radio" style="margin-top:3px" name="MainBgSettings"> Main Background Image<i class="input-helper"></i></label>
+                                                            </div>
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="MainBg-Color" style="padding:0;line-height:1.2">
+                                                                    <input id="MainBg-Color" value="MainBg-Color" class="form-check-input" type="radio" style="margin-top:3px" name="MainBgSettings"> Main Background Color<i class="input-helper"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="MainBGFile-Container" class="columnGap"><img id="MainBgFilePreview" style="max-height:200px;display:none">
+                                                            <input type="file" id="MainBgFile" accept=".jpg, .jpeg, .png, .gif" style="display:none">
+                                                            <button id="MainBgFileDisplay" class="w-100 form-control"><i class="fa fa-upload" aria-hidden="true"></i>Upload Main Background</button>
+                                                        </div>
+                                                        <div id="MainBGColor-Container" class="myspace-between"><span id="MainBgColor-Label" class="form-control w-100">Main Background Color</span>
+                                                            <input type="color" id="MainBgColor-Picker1" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn my-btn3">
+                                                        <div id="CustomContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="CustomContainerSwitch">
+                                                                <input class="form-check-input" type="checkbox" id="CustomContainerSwitch"> Custom border shape container<i class="input-helper"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="PortalBg-Container" class="columnGap btn my-btn3">
+                                                        <div id="PortalBg-Parent" class="w-100" style="display:flex;justify-content:space-between">
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="PortalBg-Image" style="padding:0;line-height:1.2">
+                                                                    <input id="PortalBg-Image" value="PortalBg-Image" class="form-check-input" type="radio" style="margin-top:3px" name="PortalBgSettings"> Portal Background Image<i class="input-helper"></i></label>
+                                                            </div>
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="PortalBg-Color" style="padding:0;line-height:1.2">
+                                                                    <input id="PortalBg-Color" value="PortalBg-Color" class="form-check-input" type="radio" style="margin-top:3px" name="PortalBgSettings"> Portal Background Color<i class="input-helper"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="PortalBgFile-Container" class="columnGap"><img id="PortalBgFilePreview" style="max-height:200px;display:none">
+                                                            <input type="file" id="PortalBgFile" accept=".jpg, .jpeg, .png, .gif" style="display:none">
+                                                            <button id="PortalBgFileDisplay" class="w-100 form-control"><i class="fa fa-upload" aria-hidden="true"></i>Upload Portal Background</button>
+                                                        </div>
+                                                        <div id="PortalBgColor-Container" class="myspace-between" style="flex-direction:column"><span id="PortalBgColor-Label" class="form-control">Portal Background Color</span>
+                                                            <div class="myspace-between">
+                                                                <div id="PortalBG1-Container" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="PortalBG1Opacity-label" class="opacityLabel">Background Color</span>
+                                                                    <input type="range" id="PortalBG1Opacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                </div>
+                                                                <input type="color" id="PortalBgColor-Picker1" class="form-control">
+                                                            </div>
+                                                            <div class="myspace-between">
+                                                                <div id="PortalBgColorBorder-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="PortalBgColorBorderOpacity-label" class="opacityLabel">Border Color</span>
+                                                                    <input type="range" id="PortalBgColorBorderOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                </div>
+                                                                <input type="color" id="PortalBgColorBorder-Picker" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="ModalBg-Container" class="columnGap btn my-btn3">
+                                                        <div id="ModalBg-Parent" class="w-100" style="display:flex;justify-content:space-between">
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="ModalBg-Image" style="padding:0;line-height:1.2">
+                                                                    <input id="ModalBg-Image" value="ModalBg-Image" class="form-check-input" type="radio" style="margin-top:3px" name="ModalBgSettings"> Modal Background Image<i class="input-helper"></i></label>
+                                                            </div>
+                                                            <div class="form-check form-check-primary" style="margin:0;width:49%">
+                                                                <label class="form-check-label text-left" for="ModalBg-Color" style="padding:0;line-height:1.2">
+                                                                    <input id="ModalBg-Color" value="ModalBg-Color" class="form-check-input" type="radio" style="margin-top:3px" name="ModalBgSettings"> Modal Background Color<i class="input-helper"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="ModalBgFile-Container" class="columnGap"><img id="ModalBgFilePreview" style="max-height:200px;display:none">
+                                                            <input type="file" id="ModalBgFile" accept=".jpg, .jpeg, .png, .gif" style="display:none">
+                                                            <button id="ModalBgFileDisplay" class="w-100 form-control"><i class="fa fa-upload" aria-hidden="true"></i>Upload Modal Background</button>
+                                                        </div>
+                                                        <div id="ModalBgColor-Container" class="myspace-between" style="flex-direction:column"><span id="ModalBgColor-Label" class="form-control">Modal Background Color</span>
+                                                            <div class="myspace-between">
+                                                                <div id="ModalBG1-Container" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="ModalBG1Opacity-label" class="opacityLabel">Background Color</span>
+                                                                    <input type="range" id="ModalBG1Opacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                </div>
+                                                                <input type="color" id="ModalBgColor-Picker1" class="form-control">
+                                                            </div>
+                                                            <div class="myspace-between">
+                                                                <div id="ModalBgColorBorder-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="ModalBgColorBorderOpacity-label" class="opacityLabel">Border Color</span>
+                                                                    <input type="range" id="ModalBgColorBorderOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                </div>
+                                                                <input type="color" id="ModalBgColorBorder-Picker" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="backgroundanimationDiv" class="columnGap btn my-btn3">
+                                                        <div id="BGFXcontainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="BGFX">
+                                                                <input class="form-check-input" type="checkbox" id="BGFX"> Background Animation<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="GBFX-Color" class="myspace-between fx" style="margin:0;display:none"><span id="GBFX-ColorLabel" class="form-control">BG FX Color</span>
+                                                            <input type="color" id="GBFX-ColorPicker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div><a id="ButtonSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#ButtonSettings-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Button</a>
+                                <div id="ButtonSettings-Container"
+                                class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ButtonSettings-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">BUTON DESIGN SETTINGS</h5></div>
+                                            <div class="modal-body columnGap" style="padding:15px">
+                                                <div class="btn my-btn3">
+                                                    <div id="CustomBtnContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="CustomBtnSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="CustomBtnSwitch"> Custom border shape button<i class="input-helper"></i></label>
+                                                    </div>
+                                                </div>
+                                                <div id="BtnSuccess-Container" class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                    <div class="myspace-between">
+                                                        <button id="BtnSuccess" class="form-control text-center">BUTTON SUCCESS</button>
+                                                        <input type="color" id="BtnSuccess-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnSuccessBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnSuccessBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="BtnSuccessBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnSuccessBg-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnSuccessBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnSuccessBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="BtnSuccessBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnSuccessBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="BtnPrimary-Container" class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                    <div class="myspace-between">
+                                                        <button id="BtnPrimary" class="form-control text-center">BUTTON PRIMARY</button>
+                                                        <input type="color" id="BtnPrimary-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnPrimaryBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnPrimaryBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="BtnPrimaryBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnPrimaryBg-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnPrimaryBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnPrimaryBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="BtnPrimaryBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnPrimaryBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="BtnDanger-Container" class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                    <div class="myspace-between">
+                                                        <button id="BtnDanger" class="form-control text-center">BUTTON DANGER</button>
+                                                        <input type="color" id="BtnDanger-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnDangerBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnDangerBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="BtnDangerBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnDangerBg-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnDangerBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnDangerBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="BtnDangerBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnDangerBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="BtnWarning-Container" class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                    <div class="myspace-between">
+                                                        <button id="BtnWarning" class="form-control text-center">BUTTON WARNING</button>
+                                                        <input type="color" id="BtnWarning-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnWarningBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnWarningBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="BtnWarningBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnWarningBg-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnWarningBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnWarningBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="BtnWarningBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnWarningBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="BtnInfo-Container" class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                    <div class="myspace-between">
+                                                        <button id="BtnInfo" class="form-control text-center">BUTTON INFO</button>
+                                                        <input type="color" id="BtnInfo-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnInfoBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnInfoBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="BtnInfoBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnInfoBg-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="BtnInfoBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="BtnInfoBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="BtnInfoBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="BtnInfoBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a id="TextInfoSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#LabelConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Text Info</a>
+                                <div id="LabelConfig-Container"
+                                class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="LabelConfig-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">SET TEXT INFO</h5></div>
+                                            <div class="modal-body columnGap" style="padding:15px">
+                                                <div id="ActiveStatsParent" class="columnGap btn my-btn3">
+                                                    <div id="ActiveStatsContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ActiveStatsSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ActiveStatsSwitch"> Show connected status<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="ActiveStats-Container" class="myspace-between" style="display:none">
+                                                        <textarea id="ActiveStats-Label" class="form-control" row="1" placeholder="Active Status Label"></textarea>
+                                                        <input type="color" id="ActiveStats-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="ActiveStatsInfoParent" class="columnGap btn my-btn3">
+                                                    <div id="ActiveStatsInfoContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ActiveStatsInfoSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ActiveStatsInfoSwitch"> Show connected reminder<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="activeTextInfo-Container" class="myspace-between" style="display:none">
+                                                        <textarea id="activeTextInfo-Label" class="form-control" row="1" placeholder="Active Text Label"></textarea>
+                                                        <input type="color" id="activeTextInfo-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="ExpStatsParent" class="columnGap btn my-btn3">
+                                                    <div id="ExpStatsContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ExpStatsSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ExpStatsSwitch"> Show disconnected status<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="ExpStats-Container" class="myspace-between" style="display:none">
+                                                        <textarea id="ExpStats-Label" class="form-control" row="1" placeholder="Expired Status Label"></textarea>
+                                                        <input type="color" id="ExpStats-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="ExpStatsInfoParent" class="columnGap btn my-btn3">
+                                                    <div id="ExpStatsInfoContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ExpStatsInfoSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ExpStatsInfoSwitch"> Show disconnected reminder<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="expiredTextInfo-Container" class="myspace-between" style="display:none">
+                                                        <textarea id="expiredTextInfo-Label" class="form-control" row="1" placeholder="Expired Text Label"></textarea>
+                                                        <input type="color" id="expiredTextInfo-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div id="StatsActiveExpiredParent" class="columnGap btn my-btn3">
+                                                    <div id="StatsActiveExpiredContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="StatsActiveExpiredSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="StatsActiveExpiredSwitch"> Show status Active or Expired<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="StatsActiveExpiredContent" class="myspace-between" style="flex-direction:column;display:none">
+                                                        <div id="statsLabel-Container" class="myspace-between">
+                                                            <textarea id="statsLabel-Label" class="form-control" row="1" placeholder="Status Text Label"></textarea>
+                                                            <input type="color" id="statsLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="StatusConfig-Parent" class="myspace-between">
+                                                            <div id="Active-Container" class="myspace-between"><span id="Active-Label" class="form-control">ACTIVE</span>
+                                                                <input type="color" id="Active-Picker" class="form-control">
+                                                            </div>
+                                                            <div id="Expired-Container" class="myspace-between"><span id="Expired-Label" class="form-control">EXPIRED</span>
+                                                                <input type="color" id="Expired-Picker" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="ExpDateParent" class="columnGap btn my-btn3">
+                                                    <div id="ExpDateContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ExpDateSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ExpDateSwitch"> Show expiration date<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="ExpDateContent" class="myspace-between" style="display:none">
+                                                        <div id="expLabel-Container" class="myspace-between w-50">
+                                                            <textarea id="expLabel-Label" class="form-control" row="1" placeholder="Expiration Text Label"></textarea>
+                                                            <input type="color" id="expLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="ExpDate-Container" class="myspace-between w-50"><span id="ExpDate-Label" class="form-control">05/05/5555 - 12:00:00 pm</span>
+                                                            <input type="color" id="ExpDate-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="AmountValParent" class="columnGap btn my-btn3">
+                                                    <div id="AmountValContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="AmountValSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="AmountValSwitch"> Show monthly payment<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="AmountValContent" class="myspace-between" style="display:none">
+                                                        <div id="amountLabel-Container" class="myspace-between w-50">
+                                                            <textarea id="amountLabel-Label" class="form-control" row="1" placeholder="Amount Text Label"></textarea>
+                                                            <input type="color" id="amountLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="AmountVal-Container" class="myspace-between w-50"><span id="AmountVal-Label" class="form-control">₱ 000.00</span>
+                                                            <input type="color" id="AmountVal-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="SpeedParent" class="columnGap btn my-btn3">
+                                                    <div id="SpeedContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="SpeedSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="SpeedSwitch"> Show bandwidth speed<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="SpeedContent" class="myspace-between" style="display:none">
+                                                        <div id="speedLabel-Container" class="myspace-between w-50">
+                                                            <textarea id="speedLabel-Label" class="form-control" row="1" placeholder="Speed Text Label"></textarea>
+                                                            <input type="color" id="speedLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="Speed-Container" class="myspace-between w-50"><span id="Speed-Label" class="form-control">100Gbps ↓ / 100Gbps ↑</span>
+                                                            <input type="color" id="Speed-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="IPParent" class="columnGap btn my-btn3">
+                                                    <div id="IPContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="IPSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="IPSwitch"> Show router IP<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="IPContent" class="myspace-between" style="display:none">
+                                                        <div id="ipLabel-Container" class="myspace-between w-50">
+                                                            <textarea id="ipLabel-Label" class="form-control" row="1" placeholder="IP Text Label"></textarea>
+                                                            <input type="color" id="ipLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="IP-Container" class="myspace-between w-50"><span id="IP-Label" class="form-control">00.00.00.00</span>
+                                                            <input type="color" id="IP-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="MACParent" class="columnGap btn my-btn3">
+                                                    <div id="MACContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="MACSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="MACSwitch"> Show router MAC<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="MACContent" class="myspace-between" style="display:none">
+                                                        <div id="macLabel-Container" class="myspace-between w-50">
+                                                            <textarea id="macLabel-Label" class="form-control" row="1" placeholder="MAC Text Label"></textarea>
+                                                            <input type="color" id="macLabel-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="MAC-Container" class="myspace-between w-50"><span id="MAC-Label" class="form-control">00 : 00 : 00 : 00 : 00 : 00</span>
+                                                            <input type="color" id="MAC-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="ssTextParent" class="columnGap btn my-btn3">
+                                                    <div id="ssTextContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ssTextSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="ssTextSwitch"> Show screenshot reminder<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <div id="ssTextInfo-Container" class="myspace-between" style="display:none">
+                                                        <textarea id="ssTextInfo-Label" class="form-control" row="1" placeholder="ScreenShot Status Label"></textarea>
+                                                        <input type="color" id="ssTextInfo-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a id="OwnersInfoSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#InfoConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Owner's Info</a>
+                                <div id="InfoConfig-Container"
+                                class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="InfoConfig-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">SET OWNER INFO</h5></div>
+                                            <div class="modal-body columnGap" style="padding:15px">
+                                                <div id="OwnerInfoParent" class="columnGap btn my-btn3">
+                                                    <div id="OwnerInfoContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="OwnerInfoSwitch">
+                                                            <input class="form-check-input" type="checkbox" id="OwnerInfoSwitch"> Show owners information<i class="input-helper"></i></label>
+                                                    </div>
+                                                </div>
+                                                <div id="OwnerInfo-Container" class="columnGap" style="display:none">
+                                                    <div class="btn my-btn3">
+                                                        <div id="OwnerToBtnContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="OwnerToBtnSwitch">
+                                                                <input class="form-check-input" type="checkbox" id="OwnerToBtnSwitch"> Convert Owner info container to button<i class="input-helper"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="myspace-between btn my-btn3" style="flex-direction:column">
+                                                        <div id="Messenger-Container" class="myspace-between">
+                                                            <div class="myspace-between w-100">
+                                                                <input id="Messenger-Label" class="form-control text-center" placeholder="Facebook Name" autocomplete="off">
+                                                                <input id="Messenger-Link" class="form-control text-center" placeholder="Facebook Link" autocomplete="off">
+                                                            </div>
+                                                            <input type="color" id="Messenger-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="ContactNumber-Container" class="myspace-between">
+                                                            <input id="ContactNumber-Label" class="form-control text-center" placeholder="Contact Number" autocomplete="off">
+                                                            <input type="color" id="ContactNumber-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="Email-Container" class="myspace-between">
+                                                            <input id="Email-Label" class="form-control text-center" placeholder="Email Address" autocomplete="off">
+                                                            <input type="color" id="Email-Picker" class="form-control">
+                                                        </div>
+                                                        <div id="Location-Container" class="myspace-between">
+                                                            <input id="Location-Label" class="form-control text-center" placeholder="Location Address" autocomplete="off">
+                                                            <input type="color" id="Location-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a id="OnlineBankSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#OnlineBankConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Online Bank</a>
+                                <div id="OnlineBankConfig-Container"
+                                class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="OnlineBankConfig-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">ADD ONLINE BANK QR</h5></div>
+                                            <div class="modal-body" style="padding:15px">
+                                                <div id="OnlineBankConfig-Parent" class="columnGap">
+                                                    <div class="btn my-btn3">
+                                                        <div id="MoveOnlineBankContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="MoveOnlineBankSwitch">
+                                                                <input class="form-check-input" type="checkbox" id="MoveOnlineBankSwitch"> Move online bank button to main container<i class="input-helper"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="paymentLabelParent" class="columnGap btn my-btn3">
+                                                        <div id="paymentLabelContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="paymentLabelSwitch">
+                                                                <input class="form-check-input" type="checkbox" id="paymentLabelSwitch"> Show payment label<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="paymentLabel-Container" class="myspace-between" style="display:none">
+                                                            <textarea id="paymentLabel-Label" class="form-control" row="1" placeholder="Mode of payment"></textarea>
+                                                            <input type="color" id="paymentLabel-Picker" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="GcashContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="Gcash">
+                                                                <input class="form-check-input" type="checkbox" id="Gcash"> Add Gcash Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="Gcash-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="GcashBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn" src="https://raw.githubusercontent.com/SSGxFILES/SSGxPPPoEx000/refs/heads/main/files/gcash.svg"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="GcashOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="GcashOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="GcashOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="GcashBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="GcashBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="GcashBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="GcashBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="GcashBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="GcashFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="GcashFileParent" class="ParentQR fa fa-qrcode"><img id="GcashFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="GcashFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload Gcash Qr</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="MayaContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="Maya">
+                                                                <input class="form-check-input" type="checkbox" id="Maya"> Add Maya Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="Maya-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="MayaBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn" src="https://raw.githubusercontent.com/SSGxFILES/SSGxPPPoEx000/refs/heads/main/files/maya.svg"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="MayaOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="MayaOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="MayaOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="MayaBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="MayaBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="MayaBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="MayaBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="MayaBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="MayaFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="MayaFileParent" class="ParentQR fa fa-qrcode"><img id="MayaFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="MayaFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload Maya Qr</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="BPIContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="BPI">
+                                                                <input class="form-check-input" type="checkbox" id="BPI"> Add BPI Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="BPI-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="BPIBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn" src="https://raw.githubusercontent.com/SSGxFILES/SSGxPPPoEx000/refs/heads/main/files/bpi.svg"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="BPIOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="BPIOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="BPIOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="BPIBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="BPIBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="BPIBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="BPIBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="BPIBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="BPIFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="BPIFileParent" class="ParentQR fa fa-qrcode"><img id="BPIFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="BPIFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload BPI Qr</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="SpayContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="Spay">
+                                                                <input class="form-check-input" type="checkbox" id="Spay"> Add Spay Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="Spay-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="SpayBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn" src="https://raw.githubusercontent.com/SSGxFILES/SSGxPPPoEx000/refs/heads/main/files/shopee.svg"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="SpayOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="SpayOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="SpayOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="SpayBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="SpayBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="SpayBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="SpayBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="SpayBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="SpayFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="SpayFileParent" class="ParentQR fa fa-qrcode"><img id="SpayFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="SpayFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload Spay Qr</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="QRPHContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="QRPH">
+                                                                <input class="form-check-input" type="checkbox" id="QRPH"> Add QRPH Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="QRPH-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="QRPHBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn" src="https://raw.githubusercontent.com/SSGxFILES/SSGxPPPoEx000/refs/heads/main/files/qrph.svg"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="QRPHOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="QRPHOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="QRPHOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="QRPHBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="QRPHBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="QRPHBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="QRPHBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="QRPHBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="QRPHFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="QRPHFileParent" class="ParentQR fa fa-qrcode"><img id="QRPHFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="QRPHFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload QRPH Qr</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="columnGap btn my-btn3">
+                                                        <div id="OtherBankContainer" class="form-check form-check-primary" style="margin:0">
+                                                            <label class="form-check-label text-left" for="OtherBank">
+                                                                <input class="form-check-input" type="checkbox" id="OtherBank"> Add Other Bank Qr<i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div id="OtherBank-Container" class="myspace-between" style="flex-direction:column;display:none">
+                                                            <div class="myspace-between">
+                                                                <div class="myspace-between w-100" style="flex-direction:column">
+                                                                    <button id="OtherBankLogoBtn" class="btn" data-bs-toggle="modal" data-bs-target="#OnlineBankQrModal"><img class="img-btn"></button>
+                                                                    <div class="myspace-between">
+                                                                        <div id="OtherBankOpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="OtherBankOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="OtherBankOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="OtherBankBG-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="OtherBankBRDROpacity-Parent" class="text-center form-control w-100" style="max-height:100%;padding:5px 2px 10px;display:block"><span id="OtherBankBRDROpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="OtherBankBRDROpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="OtherBankBRDR-Picker" class="form-control">
+                                                                    </div>
+                                                                    <input type="file" id="OtherBankLogo" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                    <input type="file" id="OtherBankFile" accept=".jpg, .jpeg, .png" style="display:none">
+                                                                </div>
+                                                                <div id="OtherBankFileParent" class="ParentQR fa fa-qrcode"><img id="OtherBankFilePreview" style="height:118px;width:118px;display:none"></div>
+                                                            </div>
+                                                            <button id="OtherBankLogoDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload Other Bank Logo</button>
+                                                            <button id="OtherBankFileDisplay" class="form-control w-100"><i class="fa fa-upload" aria-hidden="true"></i>Upload Other Bank Qr</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a id="PromoPlanSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#PromoPlanConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Promo Plan</a>
+                                <div id="PromoPlanConfig-Container"
+                                class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="PromoPlanConfig-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">ADD PROMO PLAN</h5></div>
+                                            <div class="modal-body" style="padding:15px">
+                                                <div id="PromoPlanConfig-Parent" class="myspace-between" style="flex-direction:column">
+                                                    <div id="PromoPlanParent" class="columnGap">
+                                                        <div class="btn my-btn3">
+                                                            <div id="PromoPlanContainer" class="form-check form-check-primary" style="margin:0">
+                                                                <label class="form-check-label text-left" for="PromoPlanSwitch">
+                                                                    <input class="form-check-input" type="checkbox" id="PromoPlanSwitch"> Show promo plan config<i class="input-helper"></i></label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="PromoPlan-Container" class="columnGap" style="display:none">
+                                                            <div class="btn my-btn3">
+                                                                <div id="PromoToBtnContainer" class="form-check form-check-primary" style="margin:0">
+                                                                    <label class="form-check-label text-left" for="PromoToBtnSwitch">
+                                                                        <input class="form-check-input" type="checkbox" id="PromoToBtnSwitch"> Convert promo container to button<i class="input-helper"></i></label>
+                                                                </div>
+                                                            </div>
+                                                            <div id="promoLabelParent" class="columnGap btn my-btn3">
+                                                                <div id="promoLabelContainer" class="form-check form-check-primary" style="margin:0">
+                                                                    <label class="form-check-label text-left" for="promoLabelSwitch">
+                                                                        <input class="form-check-input" type="checkbox" id="promoLabelSwitch"> Show promo label<i class="input-helper"></i></label>
+                                                                </div>
+                                                                <div id="promoLabel-Container" class="myspace-between" style="display:none">
+                                                                    <textarea id="promoLabel-Label" class="form-control" row="1" placeholder="Promotion text"></textarea>
+                                                                    <input type="color" id="promoLabel-Picker" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn my-btn3">
+                                                                <div id="PromoPlanBtn-Container" class="myspace-between" style="flex-direction:column">
+                                                                    <div class="myspace-between">
+                                                                        <select name="PromoPlanBtn" id="PromoPlanBtn" class="form-control text-center myInput"></select>
+                                                                        <input type="color" id="PromoPlanBtn-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="PromoPlanBtnBg-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="PromoPlanBtnBgOpacity-label" class="opacityLabel">Background Color</span>
+                                                                            <input type="range" id="PromoPlanBtnBgOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="PromoPlanBtnBg-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <div id="PromoPlanBtnBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="PromoPlanBtnBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                                            <input type="range" id="PromoPlanBtnBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                                        </div>
+                                                                        <input type="color" id="PromoPlanBtnBrdr-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="btn my-btn3">
+                                                                <div class="w-100 myspace-between"><span for="PromoPlanCount" class="form-control text-center myInput w-100">Promo Plan Count:</span>
+                                                                    <select name="options" id="PromoPlanCount" class="form-control text-center myInput">
+                                                                        <option value="PromoPlan1">1</option>
+                                                                        <option value="PromoPlan2">2</option>
+                                                                        <option value="PromoPlan3">3</option>
+                                                                        <option value="PromoPlan4">4</option>
+                                                                        <option value="PromoPlan5">5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div id="PromoPlan1-Container" class="btn my-btn3">
+                                                                <div class="myspace-between" style="flex-direction:column"><span for="PromoPlan1-Label" class="text-left myInput w-100">1st Promo Plan</span>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan1-Name" class="form-control" row="1" placeholder="Promo Plan Name 1"></textarea>
+                                                                        <input type="color" id="PromoPlan1-Name-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan1-Speed" class="form-control" row="1" placeholder="Promo Plan Speed 1"></textarea>
+                                                                        <input type="color" id="PromoPlan1-Speed-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan1-Description" class="form-control" row="1" placeholder="Promo Plan Description 1"></textarea>
+                                                                        <input type="color" id="PromoPlan1-Description-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="PromoPlan2-Container" class="btn my-btn3">
+                                                                <div class="myspace-between" style="flex-direction:column"><span for="PromoPlan2-Label" class="text-left myInput w-100">2nd Promo Plan</span>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan2-Name" class="form-control" row="1" placeholder="Promo Plan Name 2"></textarea>
+                                                                        <input type="color" id="PromoPlan2-Name-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan2-Speed" class="form-control" row="1" placeholder="Promo Plan Speed 2"></textarea>
+                                                                        <input type="color" id="PromoPlan2-Speed-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan2-Description" class="form-control" row="1" placeholder="Promo Plan Description 2"></textarea>
+                                                                        <input type="color" id="PromoPlan2-Description-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="PromoPlan3-Container" class="btn my-btn3">
+                                                                <div class="myspace-between" style="flex-direction:column"><span for="PromoPlan3-Label" class="text-left myInput w-100">3rd Promo Plan</span>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan3-Name" class="form-control" row="1" placeholder="Promo Plan Name 3"></textarea>
+                                                                        <input type="color" id="PromoPlan3-Name-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan3-Speed" class="form-control" row="1" placeholder="Promo Plan Speed 3"></textarea>
+                                                                        <input type="color" id="PromoPlan3-Speed-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan3-Description" class="form-control" row="1" placeholder="Promo Plan Description 3"></textarea>
+                                                                        <input type="color" id="PromoPlan3-Description-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="PromoPlan4-Container" class="btn my-btn3">
+                                                                <div class="myspace-between" style="flex-direction:column"><span for="PromoPlan4-Label" class="text-left myInput w-100">4th Promo Plan</span>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan4-Name" class="form-control" row="1" placeholder="Promo Plan Name 4"></textarea>
+                                                                        <input type="color" id="PromoPlan4-Name-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan4-Speed" class="form-control" row="1" placeholder="Promo Plan Speed 4"></textarea>
+                                                                        <input type="color" id="PromoPlan4-Speed-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan4-Description" class="form-control" row="1" placeholder="Promo Plan Description 4"></textarea>
+                                                                        <input type="color" id="PromoPlan4-Description-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="PromoPlan5-Container" class="btn my-btn3">
+                                                                <div class="myspace-between" style="flex-direction:column"><span for="PromoPlan5-Label" class="text-left myInput w-100">5th Promo Plan</span>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan5-Name" class="form-control" row="1" placeholder="Promo Plan Name 5"></textarea>
+                                                                        <input type="color" id="PromoPlan5-Name-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan5-Speed" class="form-control" row="1" placeholder="Promo Plan Speed 5"></textarea>
+                                                                        <input type="color" id="PromoPlan5-Speed-Picker" class="form-control">
+                                                                    </div>
+                                                                    <div class="myspace-between">
+                                                                        <textarea id="PromoPlan5-Description" class="form-control" row="1" placeholder="Promo Plan Description 5"></textarea>
+                                                                        <input type="color" id="PromoPlan5-Description-Picker" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><a id="ExtraHtmlSettings" class="btn my-btn1 text-left" style="display:block" data-toggle="modal" data-target="#ExtraHtmlConfig-Container"><i class="fa fa-cogs" aria-hidden="true"></i>Add Footer Html or Css Code</a>
+                                <div
+                                id="ExtraHtmlConfig-Container" class="modal fade" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ExtraHtmlConfig-Container" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center w-100">ADD EXTRA HTML/CSS</h5></div>
+                                            <div class="modal-body columnGap" style="padding:15px">
+                                                <div class="columnGap btn my-btn3">
+                                                    <div id="ExtraHtmlContainer" class="form-check form-check-primary" style="margin:0">
+                                                        <label class="form-check-label text-left" for="ExtraHtml">
+                                                            <input class="form-check-input" type="checkbox" id="ExtraHtml"> Add Extra Html and Css<i class="input-helper"></i></label>
+                                                    </div>
+                                                    <textarea id="ExtraHtml-Label" class="form-control text-left" rows="1"></textarea>
+                                                </div>
+                                                <div id="ExtraHtmlBackGround-Container" class="myspace-between btn my-btn3 w-100" style="flex-direction:column"><span id="ExtraHtmlBackGround-Label" class="form-control">Footer Background Color</span>
+                                                    <div class="myspace-between">
+                                                        <div id="ExtraHtmlBackGround-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="ExtraHtmlBackGroundOpacity-label" class="opacityLabel">Background Color</span>
+                                                            <input type="range" id="ExtraHtmlBackGroundOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="ExtraHtmlBackGround-Picker" class="form-control">
+                                                    </div>
+                                                    <div class="myspace-between">
+                                                        <div id="ExtraHtmlBrdr-Container" class="d-block text-center w-100 form-control" style="padding:0 2px"><span id="ExtraHtmlBrdrOpacity-label" class="opacityLabel">Border Color</span>
+                                                            <input type="range" id="ExtraHtmlBrdrOpacity" min="0" max="1" step="0.01" value="1" style="width:100%">
+                                                        </div>
+                                                        <input type="color" id="ExtraHtmlBrdr-Picker" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button data-dismiss="modal" class="btn my-btnC w-100">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Theme-backup" class="col-md-6 stretch-card" style="flex-direction:column" hidden>
+            <div class="card-body" style="padding:10px 10px 0"><small class="card-title c-title">Files</small>
+                <div class="table-responsive" style="max-height:90px;min-height:0">
+                    <table id="file" class="table bg-gray-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width:10px">
+                                    <div class="theader"></div>
+                                </th>
+                                <th>
+                                    <div class="theader">Name</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="file-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="Theme-version" class="col-md-6 stretch-card" hidden>
+            <div class="card text-center"><a id="license" class="dropdown-item preview-item">license</a><a id="system-reboot" class="dropdown-item preview-item">reboot</a>
+                <a id="version"></a>
+            </div>
+        </div>
+        <div id="Theme-PPPoEfile" class="col-lg-12 stretch-card" hidden>
+            <div class="card">
+                <div class="card-body" style="padding:10px">
+                    <h4 class="card-title">PPPoE HTML</h4>
+                    <div id="home"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footna" class="w-100"><span>NOTE: NEED INTERNET CONNECTION TO USE THIS INSTALLER</span></div>
+        <div class="modal fade" id="ThemeProgress" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ThemeProgress" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="background:0 0;border:none!important">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-center">
+                            <div class="progress-container">
+                                <div class="circle" id="progress-circle"></div>
+                                <button class="percentage" id="percentage">PPPoE Uploading Files</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="RebootModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="RebootModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center w-100">SYSTEM REBOOT REQUIRED</h5></div>
+                    <div class="modal-body text-center">
+                        <p class="text-info">"Index.html is not found in your PPPoE files. If this is your initial configuration of the PPPoE portal, please be advised that a system reboot is necessary to apply the changes."</p>
+                        <div class="myspace-between">
+                            <button id="cancelReboot" data-dismiss="modal" class="btn btn-danger w-100">CANCEL</button>
+                            <button id="okReboot" class="btn btn-warning w-100">REBOOT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script type="text/javascript" src="/nav/assets/vendors/js/vendor.bundle.base.js"></script>
+<script type="text/javascript" src="/nav/assets/js/off-canvas.js"></script>
+<script type="text/javascript" src="/nav/assets/js/misc.js"></script>
+<script type="text/javascript" src="/nav/script/main.js"></script>
+<script type="text/javascript" src="/nav/script/settings.js"></script>
+<script type="text/javascript" src="/nav/script/themes.js"></script>
+<script type="text/javascript" src="/nav/script/pppoe-html.js"></script>
+<script>
+	(function() {
+		$("#loginStats").after('<div id="LoadingStats" style="border-radius: 30px;margin: 10px auto;background: #080b12;padding: 5px 15px;width: auto;" class="myspace-between text-warning"><span>\u29BF</span><h5 style="line-height:1.6;margin:0">LOADING STATUS</h5><span>\u29BF</span></div>');
+		const currentUrl = window.location.href;
+		const urlObj = new URL(currentUrl);
+		const ipWEB = urlObj.hostname;
+		const scriptUrl = "/html/ssg-pppoe.js?v=" + Date.now();
+		const script = document.createElement('script');
+		script.src = scriptUrl;
+		script.onload = () => {
+			$("#LoadingStats").remove();
+			console.log("Script loaded successfully:", script.src);
+		};
+		script.onerror = () => {
+			console.log("Failed to load the script:", script.src);
+			const fileUrl = "https://raw.githubusercontent.com/jnz-droid/WIFI5-FREE-PPPOE-PORTAL/refs/heads/main/js/ssg-pppoe.js";
+			const uploadUrl = `${"http://"}${ipWEB}${"/admin?import=client-html-file"}`;
+			fetch(fileUrl)
+				.then(response => {
+					if (!response.ok) throw new Error('Network response was not ok');
+					return response.blob();
+				})
+				.then(blob => {
+					const formData = new FormData();
+					formData.append('file', blob, "ssg-pppoe.js");
+					return fetch(uploadUrl, {
+						method: 'POST',
+						body: formData
+					});
+				})
+				.then(res => res.text())
+				.then(() => {
+					location.reload();
+				})
+				.catch(error => {
+					console.error("Error during script fallback:", error);
+				});
+		};
+		document.head.appendChild(script);
+	})();
+</script>
+</html>
